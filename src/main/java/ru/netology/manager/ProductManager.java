@@ -1,5 +1,6 @@
 package ru.netology.manager;
 
+import org.jetbrains.annotations.NotNull;
 import ru.netology.domain.Product;
 import ru.netology.repository.ProductRepository;
 
@@ -35,7 +36,7 @@ public class ProductManager {
     }
 
     // метод определения соответствия товара product запросу search
-    public boolean matches(Product product, String search) {
+    public boolean matches(@NotNull Product product, String search) {
         //    if (product.getName().contains(search)) {
         //        return true;
         //    } else {
